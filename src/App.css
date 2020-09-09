@@ -1,38 +1,175 @@
+@import '~antd/dist/antd.css';
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4f4f4;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppContainer {
+  display: flex;
+  height: 100%;
+  width: 75%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sidebar {
+  flex: 1;
+  background-color: white;
+  height: 100%;
+  box-shadow: 6px 0 5px 1px rgb(240, 240, 240);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sidebar container */
+.Sidebar > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem;
+}
+
+.MenuItem {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+  padding-left: 1rem;
+  padding: 0.675rem;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.MenuItem:hover {
+  background-color: rgb(79, 184, 233);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.activeMenuItem {
+  background-color: rgb(79, 184, 233);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle {
+  height: 2.25rem;
+  width: 2.25rem;
+  background-color: #4fb8e9;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  height: 100%;
+  overflow: auto;
+}
+
+.animated-200 {
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.animated-500 {
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.Button {
+  width: 9rem;
+  border: 1px solid #d8d8d8;
+  border-radius: 9px;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.Button:hover {
+  background-color: rgb(79, 184, 233);
+  color: white;
+  opacity: 0.8;
+}
+
+.Table {
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.ColumnHeader {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 10rem;
+  color: white;
+  background-color: tomato;
+  padding: 0.3rem 1rem;
+  margin-right: 1rem;
+  border-radius: 9px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.TableRow {
+  display: flex;
+  border: 1px solid #d8d8d8;
+  height: 3rem;
+  margin: 0.5rem 0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+/* .TableData:hover {
+  background-color: rgb(79, 184, 233);
+  color: white;
+} */
+
+.TableData {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 10rem;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0.3rem 1rem;
+  margin-right: 1rem;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.Modal {
+  position: absolute;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalOpen {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ModalClose {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.flag {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-block;
+  margin-right: 0.5rem;
 }

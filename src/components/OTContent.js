@@ -72,33 +72,33 @@ const tableData = [
     Supplier: 'Alex',
     'Order Status': 'Pending',
   },
-  {
-    flag: 'No Tracking Update',
-    'Shopify Order': 1004,
-    'Order Date': 'Today at 1:12am',
-    Supplier: 'CJ',
-    'Order Status': 'Delivered',
-  },
-  {
-    flag: 'Defective Item',
-    'Shopify Order': 1003,
-    'Order Date': 'Today at 1:12am',
-    Supplier: 'CJ',
-    'Order Status': 'For Pickup',
-  },
-  {
-    'Shopify Order': 1002,
-    'Order Date': 'Yesterday at 3:57 pm',
-    Supplier: 'Alex',
-    'Order Status': 'For Pickup',
-  },
-  {
-    flag: 'No Tracking Update',
-    'Shopify Order': 1001,
-    'Order Date': 'Today at 1:12am',
-    Supplier: 'CJ',
-    'Order Status': 'Delivered',
-  },
+  // {
+  //   flag: 'No Tracking Update',
+  //   'Shopify Order': 1004,
+  //   'Order Date': 'Today at 1:12am',
+  //   Supplier: 'CJ',
+  //   'Order Status': 'Delivered',
+  // },
+  // {
+  //   flag: 'Defective Item',
+  //   'Shopify Order': 1003,
+  //   'Order Date': 'Today at 1:12am',
+  //   Supplier: 'CJ',
+  //   'Order Status': 'For Pickup',
+  // },
+  // {
+  //   'Shopify Order': 1002,
+  //   'Order Date': 'Yesterday at 3:57 pm',
+  //   Supplier: 'Alex',
+  //   'Order Status': 'For Pickup',
+  // },
+  // {
+  //   flag: 'No Tracking Update',
+  //   'Shopify Order': 1001,
+  //   'Order Date': 'Today at 1:12am',
+  //   Supplier: 'CJ',
+  //   'Order Status': 'Delivered',
+  // },
 ];
 
 const OTContent = ({ store }) => {
@@ -109,7 +109,14 @@ const OTContent = ({ store }) => {
   const [isExportModalOpen, setIsExportModalOpen] = useState(false);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        overflow: 'hidden',
+      }}
+    >
       <div>
         <div className="Button" onClick={() => setIsExportModalOpen(true)}>
           <div style={{ padding: '0.3rem 0' }}>Export</div>
@@ -176,32 +183,43 @@ const OTContent = ({ store }) => {
           </div>
         </div>
       </div>
-      <div className="Table">
-        <div className="TableHeader" style={{ display: 'flex' }}>
-          {columnHeaders.map((header) => (
-            <div className="ColumnHeader">{header}</div>
-          ))}
-        </div>
-        {tableData.map((row) => (
-          <div className="TableRow">
+      <div style={{ position: 'relative', height: '100%', overflow: 'hidden' }}>
+        <div className="Table">
+          <div className="TableHeader" style={{ display: 'flex' }}>
             {columnHeaders.map((header) => (
-              <div
-                className="TableData"
-                onClick={() => {
-                  header === 'Delivery Status' && setItemDetails(row);
-                  header === 'Shopify Order' && setItemFlag(row);
-                }}
-              >
-                {header === 'Shopify Order' && row.flag ? (
-                  <div className="flag"></div>
-                ) : (
-                  ''
-                )}
-                <span>{row[header] || '-'}</span>
+              <div className="ColumnHeader">{header}</div>
+            ))}
+          </div>
+          <div
+          // style={{
+          //   height: '100%',
+          //   overflowY: 'auto',
+          //   overflowX: 'visible',
+          //   padding: '1rem 0 0 0',
+          // }}
+          >
+            {tableData.map((row) => (
+              <div className="TableRow">
+                {columnHeaders.map((header) => (
+                  <div
+                    className="TableData"
+                    onClick={() => {
+                      header === 'Delivery Status' && setItemDetails(row);
+                      header === 'Shopify Order' && setItemFlag(row);
+                    }}
+                  >
+                    {header === 'Shopify Order' && row.flag ? (
+                      <div className="flag"></div>
+                    ) : (
+                      ''
+                    )}
+                    <span>{row[header] || '-'}</span>
+                  </div>
+                ))}
               </div>
             ))}
           </div>
-        ))}
+        </div>
       </div>
       <div
         className={`Modal animated-500 ${
@@ -240,7 +258,7 @@ const OTContent = ({ store }) => {
           style={{
             border: '1px solid rgb(79, 184, 233)',
             width: '50%',
-            height: '45%',
+            // height: '45%',
             overflow: 'auto',
             backgroundColor: 'white',
             borderRadius: '9px',
@@ -349,7 +367,7 @@ const OTContent = ({ store }) => {
           style={{
             border: '1px solid #f96b13',
             width: '50%',
-            height: '45%',
+            // height: '45%',
             overflow: 'auto',
             backgroundColor: 'white',
             borderRadius: '9px',

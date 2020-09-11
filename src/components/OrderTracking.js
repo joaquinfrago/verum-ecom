@@ -26,9 +26,17 @@ const OrderTracking = () => {
         overflow: 'hidden',
       }}
     >
-      <Tabs defaultActiveKey="1" tabBarGutter={32}>
+      <Tabs
+        defaultActiveKey="1"
+        tabBarGutter={32}
+        style={{ height: '100%', overflow: 'hidden' }}
+      >
         {stores.map((store, index) => (
-          <TabPane tab={<TabHead title={store} />} key={index}>
+          <TabPane
+            tab={<TabHead title={store} />}
+            key={index}
+            style={{ height: '100%', overflow: 'hidden' }}
+          >
             <OTContent store={store} />
           </TabPane>
         ))}

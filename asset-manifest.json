@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/verum-ecom/static/css/main.c038e7e8.chunk.css",
-    "main.js": "/verum-ecom/static/js/main.4e8d39f3.chunk.js",
-    "main.js.map": "/verum-ecom/static/js/main.4e8d39f3.chunk.js.map",
+    "main.css": "/verum-ecom/static/css/main.aeb50452.chunk.css",
+    "main.js": "/verum-ecom/static/js/main.ca27f4e7.chunk.js",
+    "main.js.map": "/verum-ecom/static/js/main.ca27f4e7.chunk.js.map",
     "runtime-main.js": "/verum-ecom/static/js/runtime-main.8f223aa1.js",
     "runtime-main.js.map": "/verum-ecom/static/js/runtime-main.8f223aa1.js.map",
     "static/css/2.6df4c8f8.chunk.css": "/verum-ecom/static/css/2.6df4c8f8.chunk.css",
     "static/js/2.b8479e25.chunk.js": "/verum-ecom/static/js/2.b8479e25.chunk.js",
     "static/js/2.b8479e25.chunk.js.map": "/verum-ecom/static/js/2.b8479e25.chunk.js.map",
     "index.html": "/verum-ecom/index.html",
-    "precache-manifest.0b34bd832a3059d1b8458b9efec16da1.js": "/verum-ecom/precache-manifest.0b34bd832a3059d1b8458b9efec16da1.js",
+    "precache-manifest.967ffa2a2b6a02c7797d3c984a3c186d.js": "/verum-ecom/precache-manifest.967ffa2a2b6a02c7797d3c984a3c186d.js",
     "service-worker.js": "/verum-ecom/service-worker.js",
     "static/css/2.6df4c8f8.chunk.css.map": "/verum-ecom/static/css/2.6df4c8f8.chunk.css.map",
-    "static/css/main.c038e7e8.chunk.css.map": "/verum-ecom/static/css/main.c038e7e8.chunk.css.map",
+    "static/css/main.aeb50452.chunk.css.map": "/verum-ecom/static/css/main.aeb50452.chunk.css.map",
     "static/js/2.b8479e25.chunk.js.LICENSE.txt": "/verum-ecom/static/js/2.b8479e25.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8f223aa1.js",
     "static/css/2.6df4c8f8.chunk.css",
     "static/js/2.b8479e25.chunk.js",
-    "static/css/main.c038e7e8.chunk.css",
-    "static/js/main.4e8d39f3.chunk.js"
+    "static/css/main.aeb50452.chunk.css",
+    "static/js/main.ca27f4e7.chunk.js"
   ]
 }

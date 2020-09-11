@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27b590f14882ef4eb1726ab15689d482",
+    "revision": "0e795c522b11353cfa8bd9836492fe26",
     "url": "/verum-ecom/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/verum-ecom/static/css/2.6df4c8f8.chunk.css"
   },
   {
-    "revision": "4f4d84ec06d3c6606a93",
-    "url": "/verum-ecom/static/css/main.c038e7e8.chunk.css"
+    "revision": "4ce3e2954fd4dd81b44e",
+    "url": "/verum-ecom/static/css/main.aeb50452.chunk.css"
   },
   {
     "revision": "a4cce198cc3380fdf2d7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/verum-ecom/static/js/2.b8479e25.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4f4d84ec06d3c6606a93",
-    "url": "/verum-ecom/static/js/main.4e8d39f3.chunk.js"
+    "revision": "4ce3e2954fd4dd81b44e",
+    "url": "/verum-ecom/static/js/main.ca27f4e7.chunk.js"
   },
   {
     "revision": "b84269d731ac084fd54c",
